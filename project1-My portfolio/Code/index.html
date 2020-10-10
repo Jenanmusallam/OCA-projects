@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS in Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JavaScript in BootStrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!-- CSS in myProject External -->
+    <link rel="stylesheet" href="stayle.css">
+    <!-- Using Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Using Icon Laibrary(font awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+
+    <title>Home</title>
+    <style>
+        * {
+            margin: auto;
+        }
+
+        .bakegroundImg {
+            background: url(img/DSC_1109.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+            background-attachment: fixed;
+            color: honeydew;
+            text-align: center;
+        }
+
+
+        .myPictior {
+            width: 17rem;
+            height: 17rem;
+            border-radius: 50%;
+            border: 4px solid rgb(201, 0, 151);
+        }
+
+        #about,
+        #education,
+        #courses {
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 100vh;
+            background-color: rgb(201, 0, 151);
+            padding: 3rem;
+            width: 99vw;
+            justify-content: center;
+        }
+
+        #experience,
+        #skrills,
+        #activities-Voluntary {
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 100vh;
+            background-color: rgba(172, 228, 241, 0.5);
+            padding: 3rem;
+            width: 99vw;
+            justify-content: center;
+
+        }
+
+        #experience p,
+        #skrills p,
+        #activities-Voluntary p {
+            color: rgb(161, 4, 122);
+
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 1rem;
+            margin-left: 17rem;
+        }
+
+        .item {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 20%;
+            box-shadow: rgb(161, 4, 122) 4px 4px;
+            font-size: 1.4rem;
+            width: 27rem;
+            text-align: center;
+            height: 17rem;
+            color: rgb(28, 82, 85);
+        }
+
+        .item h3 {
+            color: rgb(201, 0, 151);
+            font-size: 2.2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .line {
+            width: 17rem;
+            background-color: rgb(201, 0, 151);
+            height: 0.2rem;
+            margin: 1rem;
+        }
+
+        .lineMedum {
+            width: 26rem;
+            background-color: rgb(201, 0, 151);
+            height: 0.2rem;
+            margin: 1rem;
+            justify-content: center;
+        }
+
+        .lineLong {
+            width: 30rem;
+            background-color: rgb(201, 0, 151);
+            height: 0.2rem;
+            margin: 1rem;
+            justify-content: center;
+        }
+
+        article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .spaceDiv {
+            background-color: rgb(6, 107, 114);
+            width: 30rem;
+            height: 0.2rem;
+            margin-top: 2rem;
+        }
+
+        .unPhilad {
+            width: 8vw;
+            height: 13vh;
+            box-shadow: rgb(6, 107, 114) 3px 3px 3px;
+            border-radius: 25px;
+            margin-bottom: 2rem;
+        }
+
+        .lineSkill {
+            display: inline-block;
+        }
+
+        .whit {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .level {
+            height: 2rem;
+            width: 17rem;
+            background-color: rgb(40, 182, 175);
+            border-radius: 40px;
+            border: cadetblue solid 3px;
+        }
+
+        .colorLev {
+            height: 1.8rem;
+            width: 7rem;
+            margin-top: -0.1rem;
+            margin-left: 9.8rem;
+            background-color: rgb(117, 117, 117);
+            border-radius: 0 40px 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contener">
+        <div class="bakegroundImg">
+            <div class="text-bakeground">
+                <h2>Hello , I'm <samp style="color: rgb(27, 200, 223);">Jenan Musallam</samp> . </h2>
+                <h2>I want to make things up ..
+                    It has a Beautiful Effect.</h2>
+                <br>
+                <a href="/project.html" class="btn btn-info"> View My Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <!-- Navbars in my project -->
+        <nav>
+            <div class="navMe">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li class="navLi"><a href="#about"><i class="fas fa-house-user"></i> About</a></li>
+                    <li class="navLi"><a href="#experience"><i class="fas fa-chart-line"></i> Experience</a></li>
+                    <li class="navLi"> <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li class="navLi"><a href="/project.html" target="_blank"><i class="fas fa-laptop-code"></i>
+                            Project</a></li>
+                    <li class="navLi"><a href="#skrills"> <i class="fas fa-hand-holding-heart"></i> Skills</a></li>
+                    <li class="navLi"><a href="#courses"><i class="fas fa-list-alt"></i> Courses Attended</a></li>
+                    <li class="navLi"><a href="#activities-Voluntary"><i class="fas fa-users"></i></i> Activities &
+                            Voluntary Work</a></li>
+                    <li class="navLi"><a href="/contact.html"><i class="far fa-id-card"></i></i> Countact</a></li>
+                    <li class="navLi"><a
+                            href="https://drive.google.com/file/d/1kzHk4FQGXhwXVAEnsOmZv0t66TsfggwO/view?usp=sharing"
+                            target="_blank">
+                            <i class="fas fa-paperclip"></i> Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Article in my project -->
+        <article>
+            <!-- About in my project -->
+            <section id="about">
+                <h3 class="headingSize"> About <div class="line"></div>
+                </h3>
+                <img src="/img/jenan.jpg" class="myPictior" alt="my Pictior">
+                <h5>
+                    I'm a full-stack web developer. <i class="fas fa-laptop-code"></i>
+                </h5>
+                <p class="txtParagraf">Obtain a challenging and rewarding position in Information Technology with User
+                    community employing my experience in this field</p>
+                <p>
+                    <i class="fas fa-birthday-cake"></i> 28/7/1996
+                    <br><br><i class="fas fa-map-marker-alt"></i> Amman - Jordan
+                </p>
+            </section>
+            <!-- Experience in my project -->
+            <section id="experience">
+                <h3 class="headingSize"><i class="fas fa-chart-line"></i> Experience <div class="line"></div>
+                </h3>
+
+                <h5>
+                    Web Designer(Training)
+                </h5>
+                <p class="txtParagraf">SAMA Amoun Company –Amman /Jordan ‏ ~ 1 Sep 2019 – Nov 2019
+                    <br><br>
+                    Using ( .NET Core ) Front-End & Bake-End.
+                </p>
+                <!-- line in Div -->
+                <div class="spaceDiv"></div>
+                <!-- End line in Div -->
+                <h5>
+                    Front end Designing (Training)
+                </h5>
+                <p class="txtParagraf">SXociaLive Software Innovation Company – Amman / Jordan ~ 12 Mar –21May 2018
+                    <br><br>
+                    Using Visual Studio Software (HTML, CSS).
+                </p>
+
+            </section>
+            <!-- Education in my project -->
+            <section id="education">
+                <div style="height: 2rem;">
+                    <h3 class="headingSize"> <i class="fas fa-graduation-cap"></i> Education <div class="line"></div>
+                    </h3>
+                </div>
+                <div class="university" style="text-align: center; margin: 1rem 1rem;">
+                    <img src="/img/ph-logo.png" alt="logo_philadelphia" class="unPhilad">
+                    <h4 style="color: rgb(4, 65, 116);">
+                        BSc Management Information Systems (IT)</h4>
+                    <p class="txtParagraf"> <i class="fas fa-user-graduate"></i> Philadelphia University – 2019</p>
+                </div>
+            </section>
+            <!-- Skills in my project -->
+            <section id="skrills">
+                <h3 class="headingSize"> <i class="fas fa-hand-holding-heart"></i> Skills<div class="line"></div>
+                </h3>
+                <div class="flex">
+                    <div class="item">
+                        <h3>HTML</h3>
+                        <br>
+                        <div class="level">
+                            <div class="colorLev"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3>CSS</h3>
+                        <br>
+                        <div class="level">
+                            <div class="colorLev" style=" margin-left: 6.5rem; width: 10.2rem;"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3>Photographer</h3>
+                        <br>
+                        <div class="level">
+                            <div class="colorLev" style=" margin-left: 8.5rem; width: 8.2rem;"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3>Volunteer</h3>
+                        <br>
+                        <div class="level">
+                            <div class="colorLev"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3>Communication</h3>
+                        <br>
+                        <div class="level">
+                            <div class="colorLev"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3>JavaScript</h3>
+                        <br>
+                        <div class="level">
+                            <div class="colorLev" style=" margin-left: 4.5rem; width: 12.2rem;"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3>software</h3>
+                        <ul class="software">
+                            <li>Visual Studio </li>
+                            <li>Microsoft Office </li>
+                            <li>Movie Maker</li>
+                            <li>Wonder-share filmora9</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Courses Attended in my project -->
+            <section id="courses">
+                <h3 class="headingSize"> <i class="fas fa-list-alt"></i> Courses Attended<div class="lineMedum"></div>
+                </h3>
+                <div class="flex" style="color: rgb(28, 82, 85); font-size: 1.5rem;">
+                    <ul>
+                        <li>
+                            <ul>Frontend web Design:
+                                <li class="whit">Jordan Computer Society – Amman June 2020 for 2 months</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>Block chain and Digital Currencies Future (online)
+                                <li class="whit">Aljhood Group June 2020</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>HTML Fundamentals & CSS Fundamentals and JavaScript Tutorial
+                                <li class="whit">SoloLearn – Online May 2020</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>Career Direction
+                                <li class="whit">Education for Employment (EFE) – Amman 24 Sep - 03 Oct 2019</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>Web Development and ASP.Net:
+                                <li class="whit">Pioneers Academy – Amman 01 Nov 2017 – 21 Feb 2018</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>Injection and First Aid
+                                <li class="whit">Shabab Academy- Amman 2016</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>Communication Skills
+                                <li class="whit">University of Jordan July 2015 (12 hours)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Activities & Voluntary Work in my project -->
+            <section id="activities-Voluntary">
+                <h3 class="headingSize"> <i class="fas fa-users"></i></i> Activities & Voluntary Work<div
+                        class="lineLong">
+                    </div>
+                </h3>
+                <div class="flex" style="color: rgb(201, 0, 151); font-size: 2rem;">
+                    <ul>
+                        <li>NAWAT to organize events : voluntary work events 2019</li>
+                        <li>Ghayir Society: voluntary work events 2014 – 2019</li>
+                        <li>Volunteer within Philadelphia University (Pioneers Philadelphia, NAS Philadelphia, Manasa).
+                        </li>
+                        <li>UN Women program: voluntary work events July 2017</li>
+                        <li>Nahno Min Ajalkom Society: voluntary work events 2016 - 2017 .</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <!-- footer Conection -->
+        <footer>
+            <h2 class="headingSize" style=" border-bottom:none; color:rgb(201, 0, 151);"> <i
+                    class="fas fa-share-alt"></i>
+                Communication
+                </h1>
+                <div class="icon-contact">
+                    <div class="icon"><i class="fas fa-phone-alt"> 0770637014</i></div>
+                    <div class="icon"><a href="https://www.github.com/Jenanmusallam" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/jenan-musallam" target="_blank"><i
+                                class="fab fa-linkedin"></i> </a></div>
+                    <div class="icon"><a href="jenan.musalam@gmail.com"><i
+                                class="fas fa-envelope">Jenan.musalam@gmail.com</i></a></div>
+                </div>
+                <h6>Jenan Musallam ©2020</h6>
+        </footer>
+
+    </div>
+</body>
+
+</html>

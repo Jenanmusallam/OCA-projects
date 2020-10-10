@@ -1,0 +1,259 @@
+   * {
+       box-sizing: border-box;
+       /* margin: auto; */
+
+   }
+
+   body {
+       font-family: "Sofia";
+       font-weight: bold;
+       background-color: rgba(172, 228, 241, 0.5);
+   }
+
+   /* index Page */
+   .navMe {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       height: 100vh;
+       width: 9rem;
+       padding: 0;
+       position: fixed;
+       top: 0;
+   }
+
+   .fas,
+   .far,
+   .fab {
+       color: rgb(27, 200, 223);
+       font-size: 2rem;
+
+   }
+
+   .navLi {
+       display: inline-block;
+       border: 3px solid rgb(201, 0, 151);
+       background-color: white;
+       border-radius: 20%;
+       padding: 1rem;
+       width: 13rem;
+       color: rgb(201, 0, 151);
+       text-align: center;
+       font-size: 1.3rem;
+       margin: 0.3rem;
+   }
+
+   .navLi a {
+       color: rgb(201, 0, 151);
+
+   }
+
+
+   .checkbtn {
+       font-size: 30px;
+       color: azure;
+       float: right;
+       line-height: 80px;
+       margin-right: 40px;
+       cursor: pointer;
+       display: none;
+   }
+
+   #check {
+       display: none;
+   }
+
+   .headingSize,
+   .headingSizeBig {
+       color: rgb(27, 200, 223);
+       text-shadow: rgb(10, 39, 36) 5px 5px 5px;
+       text-align: center;
+       font-size: 2rem;
+       padding-top: 2rem;
+   }
+
+   .headingSizeBig {
+
+       font-size: 3rem;
+
+   }
+
+   .text-bakeground {
+       color: rgb(255, 255, 255);
+       text-shadow: rgb(10, 39, 36) 5px 5px 5px;
+       text-align: center;
+       background-color: rgba(172, 228, 241, 0.5);
+       position: sticky;
+       top: 45rem;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+   }
+
+   .txtParagraf {
+       color: rgb(250, 250, 250);
+       margin: 2rem;
+       font-size: 1.4rem;
+       width: 90vw;
+       text-align: center;
+   }
+
+
+   /* End index Page */
+   /* contact Page */
+   .text-bakeground-contact {
+       color: rgb(255, 255, 255);
+       text-shadow: rgb(10, 39, 36) 5px 5px 5px;
+       text-align: center;
+       background-color: rgba(172, 228, 241, 0.5);
+       height: 100vh;
+       padding-top: 11rem;
+       padding-bottom: 1rem;
+   }
+
+   h4 {
+       color: rgb(201, 0, 151);
+       text-shadow: rgb(46, 5, 36) 5px 5px 5px;
+   }
+
+
+
+   /* End contact Page */
+
+   /* Footer */
+   .icon-contact {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       text-align: center;
+       margin: 0 43rem;
+
+   }
+
+   .icon {
+       padding: 2rem;
+   }
+
+   .icon i:hover {
+       color: rgb(255, 255, 255);
+       transform: scale(1.5);
+   }
+
+   footer {
+
+       background-color: rgb(3, 153, 158);
+   }
+
+   h6 {
+       color: rgb(201, 0, 151);
+       text-align: center;
+   }
+
+   /* End Footer */
+
+   /* Media  */
+
+
+   @media(max-width:1200px) {
+       .checkbtn {
+           display: block;
+           margin: 1rem 1rem
+       }
+
+       ul {
+           position: fixed;
+           width: 100%;
+           height: 100vh;
+           left: -33rem;
+           text-align: center;
+       }
+
+       nav ul li {
+           display: block;
+           margin: 50px 0;
+           line-height: 30px;
+       }
+
+       nav ul li a {
+           font-size: 20px;
+       }
+
+       #check:checked~ul {
+           left: 2rem;
+       }
+
+       .icon {
+           padding: 1rem;
+       }
+
+       .icon-contact {
+           margin: 0 10rem;
+       }
+
+       .txtParagraf {
+           width: 100%;
+           margin: 0rem;
+
+       }
+
+       .lineLong {
+           width: 20rem;
+       }
+
+       .headingSizeBig {
+           font-size: 2rem;
+       }
+
+       section {
+           width: 97vw;
+
+       }
+
+       #activities-Voluntary {
+           width: 97vw;
+       }
+
+       .headingSize {
+           font-size: 1.5rem;
+       }
+
+       .flex {
+           margin: 0.2rem;
+           margin-left: 0;
+
+       }
+
+       .item {
+           width: 20rem;
+           height: 10rem;
+           font-size: 0.2rem;
+
+       }
+
+       .item h3 {
+           font-size: 1.4rem;
+       }
+
+       .software {
+           font-size: 0.5rem;
+       }
+   }
+
+   @media(max-width:952px) {
+       label.logo {
+           font-size: 30px;
+       }
+
+       nav ul li a {
+           font-size: 16px;
+       }
+
+       .icon {
+           padding: 1rem;
+       }
+
+       .icon-contact {
+           margin: 0 10rem;
+       }
+   }
+
+   /*End media */
