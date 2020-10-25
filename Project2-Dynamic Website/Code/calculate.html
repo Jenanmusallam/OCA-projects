@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using Icon Laibrary(font awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+    <!-- CSS in Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JavaScript in BootStrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="calculate.css">
+    <title>Smile -- Calculator</title>
+
+</head>
+
+<body id="body">
+    <!----------------------------------main container----------------------------->
+    <div id="container">
+        <!----------------------------------nav bar---------------------------------->
+        <header class="header" id="header">
+            <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><i class="smile fas fa-smile "> Smile </i> </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarsExample06">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="To-doList.html">To-Do List</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="calculate.html">Calculator</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!----------------------------------content---------------------------------->
+        <h1 class="headCalculator"> <i class="fas fa-calculator"></i> Calculator </h1>
+        <main class="main" id="main">
+
+            <section class="section" id="sectionOne">
+                <h5>Mathematical Operations </h5>
+                <hr>
+                <ul class="listCalculator">
+                    <li>Summation</li>
+                    <li>Subtraction</li>
+                    <li>Multiplying</li>
+                    <li>Dividing</li>
+                    <li>Power</li>
+                    <li>Factorial</li>
+                    <li>Absolute value</li>
+                </ul>
+
+            </section>
+            <section class="section" id="sectionTow">
+
+                <input type="number" id="input1" class="sum">
+                <input type="number" id="input2" class="sum">
+                <div class="calculate">
+                    <button id="addition" onclick="myAddition()"><i class="fas fa-plus"></i></button>
+                    <button id="subtraction" onclick="mySubtraction()"><i class="fas fa-minus"></i></button>
+                    <button id="multiplying" onclick="myMultiplying()"><i class="fas fa-times"></i> </button>
+                    <button id="dividing" onclick="myDividing()"><i class="fas fa-divide"></i></button>
+                    <button id="power" onclick="myPower()"><i class="fas fa-superscript"></i></button>
+                    <button id="factorial" onclick="myFactorial()"> <i class="fas">X!</i></button>
+                    <button id="absoluteValue" onclick="myAbsoluteValue()"><i class="fas">|X|</i></button>
+                    <button id="clear" onclick="clearButton()"> Clear </button>
+                </div>
+                <button class="sum" id="sum"> = </button>
+
+            </section>
+        </main>
+        <!-- -----------------------Footer--------------------- -->
+        <footer class="page-footer font-small bg-dark pt-4">
+
+            <!-- Footer Elements -->
+            <div class="footer">
+                <div class="styleInJavaScript">
+                    <div class="itemFooter" onclick="backGroundColor()">
+                        <h4>Back Ground Color</h4>
+                        <button id="colorOne" class="buttonColor"></button>
+                        <button id="colorTwo" class="buttonColor"></button>
+                        <button id="colorThree" class="buttonColor"></button>
+                        <button id="colorFour" class="buttonColor"></button>
+                    </div>
+                    <div class="itemFooter" onclick="Size()">
+                        <h4>Font Size</h4>
+                        <button id="sizeOne" class="buttonSize">XL</button>
+                        <button id="sizeTwo" class="buttonSize">L</button>
+                        <button id="sizeThree" class="buttonSize">M</button>
+                        <button id="sizeFour" class="buttonSize">S</button>
+                    </div>
+                    <div class="itemFooter" onclick="fontFamily()">
+                        <h4>Font Family</h4>
+                        <button id="fontOne" class="buttonFontFamily">Times</button>
+                        <button id="fontTwo" class="buttonFontFamily">Impact</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© All Rights Reserved 2020 </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+    </div>
+    <script src="calculate.js"></script>
+</body>
+
+</html>

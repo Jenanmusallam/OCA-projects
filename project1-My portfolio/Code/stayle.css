@@ -216,18 +216,6 @@
            font-size: 1.5rem;
        }
 
-       .flex {
-           margin: 0.2rem;
-           margin-left: 0;
-
-       }
-
-       .item {
-           width: 20rem;
-           height: 10rem;
-           font-size: 0.2rem;
-
-       }
 
        .item h3 {
            font-size: 1.4rem;
@@ -236,6 +224,31 @@
        .software {
            font-size: 0.5rem;
        }
+   }
+
+   @media(max-width:600px) {
+       .flex {
+           margin: 0.2rem;
+           margin-left: 0;
+          
+       }
+
+       .item {
+           width: 43vw;
+           height: 14vh;
+           font-size: 0.2rem;
+       }
+ .level {
+     height: 2vh;
+     width: 7rem;
+ }
+
+ .colorLev {
+     height: 1.8vh;
+     width: 7vw;
+     margin-left: 4.5rem;
+ }
+
    }
 
    @media(max-width:952px) {

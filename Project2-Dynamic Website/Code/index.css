@@ -1,0 +1,340 @@
+
+*{
+  box-sizing: border-box;
+  color: #f56052;
+}
+
+        /* _________Navbare____________  */
+        .smile {
+            color: yellow !important;
+            font-size: 2rem;
+
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.5rem;
+        }
+
+/*________________End Navbare ___________________ */
+#container{
+/* display: grid; */
+box-shadow: 0 0 20px 0 rgba(72, 94, 116,0.7);
+/* grid-template-columns: repeat(2,1fr); */
+/* align-content: center; */
+/* justify-content: center; */
+padding-top: 1rem;
+padding-bottom: 1rem;
+grid-row: 1fr;
+border: 0;
+}
+
+.form{
+margin: 3em;
+box-shadow: 0 0 20px 0 rgba(72, 94, 116,0.7);
+padding-top: 3rem;
+
+}
+
+
+.info{
+margin: 3em;
+}
+
+ button {
+border-radius: 1rem;
+box-shadow: 0 0 10px 0 rgba(72, 94, 116,0.7);
+height: 3rem;
+width: 10rem;
+cursor: pointer;
+ }
+
+ .clear{
+width: 16.5rem;
+ }
+ 
+.name, .password, .email, .phone, .date{
+border-radius: 1rem;
+height: 2rem;
+width: 17rem;
+ }
+
+::placeholder{
+text-align: center;
+}
+
+.checkbox{
+  cursor: pointer;
+}
+
+.btnss {
+  display: flex;
+  justify-content: space-around;
+ }
+/*_________________________________cards________________________________*/
+
+
+#sectionCard{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3rem;
+  grid-gap: 1rem;
+}
+.cards, .cards2, .cards3 {
+position: relative;
+width: 20vw;
+height: 43vh;
+background: gray;
+}
+
+.card1, .card2, .card3{
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: all 0.5s ease;
+background: hotpink;
+}
+
+.card1:hover{
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.card2:hover{
+transform: rotateY(180deg);
+transition: 1s;
+}
+
+.card3:hover{
+  transform: rotateY(180deg);
+  transition:1s;
+}
+
+.frontCard, .frontCard2, .frontCard3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background:indigo ;
+ 
+}
+.imgCard{
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background:indigo ;
+  
+}
+
+.backCard, .backCard2, .backCard3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background:white ;
+  color:rgba(140, 0, 255, 0.836);
+  transform: rotateY(180deg);
+}
+
+.card-body {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.icon-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.fas {
+  font-size: 1rem;
+}
+
+.fab {
+  font-size: 2rem;
+}
+
+.card {
+  color: rgb(8, 118, 35);
+ 
+}
+
+/*-----------------------------------*/
+#center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#sectionCard {
+display: grid;
+/* flex-direction: row;
+flex-wrap: warp;
+justify-content: space-around;
+width: 97%;
+align-content: center;
+flex-basis: 40vw; */
+margin: auto;
+text-align: center;
+
+text-align: center;
+grid-template-areas: 
+"cards1 cards2 cards3"
+;
+}
+.cards, .cards2, .cards3{
+  margin: 0;
+  width: 80%;
+  
+  height: 60vh;
+
+}
+
+.cards{
+  grid-area: cards1;
+}
+
+.cards2{
+  grid-area: cards2;
+}
+
+.cards3{
+  grid-area: cards3;
+}
+
+
+
+
+        /* __________________________Footer____________________ */
+        .styleInJavaScript {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          height: 25vh;
+      }
+
+      .buttonColor,
+      .buttonSize {
+          background-color: #ebdfdf;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+      }
+
+      .buttonFontFamily {
+          width: 8rem;
+          height: 2rem;
+          font-size: 0.8rem;
+          font-weight: bold;
+      }
+
+      #colorOne {
+          background-color: #99c1de;
+      }
+
+      #colorTwo {
+          background-color: #c5dedd;
+      }
+
+      #colorThree {
+          background-color: #fad2e1;
+      }
+
+      #colorFour {
+          background-color: #eddcd2;
+      }
+/* End Footer */
+@media only screen and (max-width: 900px) {
+  #sectionCard{
+      display: flex;
+  flex-direction: row;
+  flex-wrap: warp;
+  justify-content: space-around;
+  width: 97%;
+  align-content: center;
+  flex-basis: 350px;
+  
+  }
+  .cards, .cards2, .cards3{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cards, .cards2, .cards3{
+    width: 100%;
+    height: 45vh;
+  }
+  .info{
+    margin:3rem 1rem;
+  }
+  .form{
+    margin:3rem 0.5rem;
+  }
+  .btnss {
+    display: flex;
+    justify-content: space-around;
+   }
+
+  }
+  
+  /*------------------------------edit */
+  .form {
+display: flex;
+justify-content: space-around;
+margin: 3rem 1rem;
+}
+
+.container-info {
+  display: flex;
+justify-content: space-around;
+width: 100%;
+grid-area: info;
+}
+.form-container {
+  width: 90%;
+  grid-area: form;
+  padding: 1rem;
+
+}
+#container1 {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+  "info form " ;
+}
+.info {
+  margin: 3rem 1rem;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+  #sectionCard {
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+  }
+  .cards, .cards2, .cards3{
+    width: 70%;
+    height: 90vw;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+ #container1 {
+   display: flex;
+   flex-direction: column;
+
+ }
+ .btnss {
+ display: flex;
+ justify-content: space-around;
+}
+
+}
+ @media(max-width:415px) {
+
+            .styleInJavaScript {
+                font-size: 0.5rem;
+                height: 35vh;
+            }
+ }
