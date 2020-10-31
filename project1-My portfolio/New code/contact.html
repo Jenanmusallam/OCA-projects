@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS in Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JavaScript in BootStrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!-- CSS in myProject External -->
+    <link rel="stylesheet" href="stayle.css">
+    <!-- Using Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Using Icon Laibrary -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+
+
+    <title>Contact</title>
+
+    <style>
+        * {
+            margin: auto;
+        }
+
+        .contener {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        form {
+            height: 59vh;
+            width: 39vw;
+            text-align: center;
+            padding-top: 3rem;
+        }
+
+
+        .contact {
+            background-color: cadetblue;
+        }
+
+        .bakegroundImg {
+            background: url(img/1305562.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bakeground and contact masege -->
+    <div class="bakegroundImg">
+        <div class="text-bakeground-contact">
+            <div class="contener">
+                <h1 class="headingSizeBig" style="border-bottom: solid 3px#FF96CA;"> <i
+                        class="far fa-id-card"></i></i> Contact<div class="line"></div>
+                </h1>
+                <form>
+                    <h4>Have a question or want to work together?</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="fullName" id="fN" placeholder="Neme">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control" name="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="masseg" rows="3" placeholder="Your Massege"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background-color: #FF96CA;"> <i
+                            class="fas fa-envelope-open-text"></i> Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Navbars in my project -->
+    <nav>
+        <div class="navMe">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul>
+                <li class="navLi"><a href="index.html"><i class="fas fa-house-user"></i>
+                        About</a></li>
+                <li class="navLi"><a href="index.html"><i class="fas fa-chart-line"></i> Experience</a></li>
+                <li class="navLi"><a href="index.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li class="navLi"><a href="project.html" target="_blank"> <i class="fas fa-laptop-code"></i>
+                        Project</a></li>
+                <li class="navLi"><a href="index.html"><i class="fas fa-hand-holding-heart"></i> Skills</a></li>
+                <li class="navLi"><a href="index.html"><i class="fas fa-list-alt"></i> Courses Attended</a></li>
+                <li class="navLi"><a href="index.html"><i class="fas fa-users"></i></i> Activities & Voluntary Work</a>
+                </li>
+                <li class="navLi"><a href="contact.html"><i class="far fa-id-card"></i></i>
+                        Countact</a></li>
+                <li class="navLi"><a
+                        href="https://drive.google.com/file/d/1kzHk4FQGXhwXVAEnsOmZv0t66TsfggwO/view?usp=sharing"
+                        target="_blank"><i class="fas fa-paperclip"></i> Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+   <!-- footer Conection -->
+   <footer>
+       <h2 class="headingSize" style=" border-bottom:none; color:#FF96CA;"> <i class="fas fa-share-alt"></i>
+           Communication
+           </h1>
+           <div class="icon-contact">
+               <div class="icon"><i class="fas fa-phone-alt"> 0770637014</i></div>
+               <div class="icon"><a href="https://www.github.com/Jenanmusallam" target="_blank"><i
+                           class="fab fa-github"></i></a>
+               </div>
+               <div class="icon"><a href="https://www.linkedin.com/in/jenan-musallam" target="_blank"><i
+                           class="fab fa-linkedin"></i> </a></div>
+               <div class="icon"><a href="jenan.musalam@gmail.com"><i
+                           class="fas fa-envelope">Jenan.musalam@gmail.com</i></a></div>
+           </div>
+           <h6>Jenan Musallam ©2020</h6>
+   </footer>
+
+</body>
+
+</html>

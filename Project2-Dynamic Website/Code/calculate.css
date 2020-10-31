@@ -3,7 +3,7 @@
             margin: auto;
             padding: 0;
             text-align: center;
-            color: #f56052;
+             color: #bb5579;
         }
 
  #container {
@@ -200,6 +200,9 @@
         }
 
         @media(max-width:750px) {
+            #container {
+    width: 97vw;
+}
             .main {
                 grid-template-columns: repeat(1, 0fr);
                 width: 97vw;

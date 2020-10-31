@@ -1,13 +1,14 @@
 
 *{
   box-sizing: border-box;
-  color: #f56052;
+  color: #bb5579;
 }
 
         /* _________Navbare____________  */
-        .smile {
+    .header  .smile {
             color: yellow !important;
-            font-size: 2rem;
+            font-size: 2rem ;
+            padding-left: 2rem;
 
         }
 
@@ -15,15 +16,10 @@
             font-size: 1.5rem;
         }
 
+
 /*________________End Navbare ___________________ */
 #container{
-/* display: grid; */
 box-shadow: 0 0 20px 0 rgba(72, 94, 116,0.7);
-/* grid-template-columns: repeat(2,1fr); */
-/* align-content: center; */
-/* justify-content: center; */
-padding-top: 1rem;
-padding-bottom: 1rem;
 grid-row: 1fr;
 border: 0;
 }
@@ -70,6 +66,11 @@ text-align: center;
   display: flex;
   justify-content: space-around;
  }
+
+
+ .main{
+       text-align: center;
+ }
 /*_________________________________cards________________________________*/
 
 
@@ -78,6 +79,7 @@ text-align: center;
   grid-template-columns: repeat(3, 1fr);
   margin: 3rem;
   grid-gap: 1rem;
+padding-left: 7rem;
 }
 .cards, .cards2, .cards3 {
 position: relative;
@@ -242,8 +244,12 @@ grid-template-areas:
       #colorFour {
           background-color: #eddcd2;
       }
+      .pt-4, .py-4 {
+    padding-top: 1.5rem!important;
+    padding-left: 7rem;
+}
 /* End Footer */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   #sectionCard{
       display: flex;
   flex-direction: row;
@@ -256,7 +262,14 @@ grid-template-areas:
   }
   .cards, .cards2, .cards3{
     width: 100%;
+    height: 40vh;
   }
+  #sectionCard {
+   
+    padding-left: 1rem;
+  }
+  .styleInJavaScript {
+    height: 9vh;}
 }
 @media only screen and (max-width: 768px) {
   .cards, .cards2, .cards3{
@@ -337,4 +350,23 @@ grid-area: info;
                 font-size: 0.5rem;
                 height: 35vh;
             }
+            .pt-4, .py-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.styleInJavaScript {
+    font-size: 0.7rem;
+}
+.footer h4{
+  font-size: 1rem;
+}
+.icon-contact {
+    grid-template-columns: repeat(1, 1fr);
+}
+.card-body {
+   
+   padding: 0;}
+
+ .card {
+    height: 42vh;}
  }

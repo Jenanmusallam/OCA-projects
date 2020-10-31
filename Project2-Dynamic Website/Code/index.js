@@ -3,39 +3,39 @@
 /* local/session storage */
 
   function local(){
-     var inputUSer= document.getElementById("name");
-     localStorage.setItem("name", inputUSer.value);
+     var inputUSer= document.getElementById("userName");
+     localStorage.setItem("userName", inputUSer.value);
 
-     var inputPhone= document.getElementById("phone");
-     localStorage.setItem("phone", inputPhone.value);
+     var inputPhone= document.getElementById("phoneNum");
+     localStorage.setItem("phoneNum", inputPhone.value);
 
-     var inputEmail= document.getElementById("email");
-     localStorage.setItem("email", inputEmail.value);
+     var inputEmail= document.getElementById("userEmail");
+     localStorage.setItem("userEmail", inputEmail.value);
 
-     var inputDate= document.getElementById("date");
-     localStorage.setItem("date", inputDate.value);
+     var inputDate= document.getElementById("userDate");
+     localStorage.setItem("userDate", inputDate.value);
 
-     var inputPass= document.getElementById("password");
-     localStorage.setItem("password", inputPass.value);
+     var inputPass= document.getElementById("userPassword");
+     localStorage.setItem("userPassword", inputPass.value);
     }
 
 
 
     function session(){
-      var inputUSer= document.getElementById("name");
-      sessionStorage.setItem("name", inputUSer.value);
+      var inputUSer= document.getElementById("userName");
+      sessionStorage.setItem("userName", inputUSer.value);
  
-      var inputPhone= document.getElementById("phone");
-      sessionStorage.setItem("phone", inputPhone.value);
+      var inputPhone= document.getElementById("phoneNum");
+      sessionStorage.setItem("phoneNum", inputPhone.value);
 
-      var inputDate= document.getElementById("date");
-      sessionStorage.setItem("date", inputDate.value);
+      var inputDate= document.getElementById("userDate");
+      sessionStorage.setItem("userDate", inputDate.value);
  
-      var inputEmail= document.getElementById("email");
-      sessionStorage.setItem("email", inputEmail.value);
+      var inputEmail= document.getElementById("userEmail");
+      sessionStorage.setItem("userEmail", inputEmail.value);
  
-      var inputPass= document.getElementById("password");
-      sessionStorage.setItem("password", inputPass.value);
+      var inputPass= document.getElementById("userPassword");
+      sessionStorage.setItem("userPassword", inputPass.value);
      }
 
      function clear() {
@@ -176,6 +176,8 @@ function validatePassword(){
 producePrompt("Password is Required","errorPassword", "red");
 return false;
   }
-  producePrompt("Vaild Password", "errorPassword","green");
+
+  ''
+  producePrompt("-Vaild Password", "errorPassword","green");
 return true;
 }
