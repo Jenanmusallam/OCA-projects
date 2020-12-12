@@ -160,7 +160,7 @@
 
 @media screen and (max-width: 1538px) {
 	.containerCard {
-		margin: 0px 2rem;
+		margin: 0px 1rem;
 	}
 
 	.services__container h3 {
@@ -175,6 +175,7 @@
 @media screen and (max-width: 952px) {
 	.containerCard {
 		padding: 1rem;
+		margin: 0px 0px;
 	}
 }
 

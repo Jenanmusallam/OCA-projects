@@ -4,6 +4,7 @@
 	--Third-color: #214685;
 	--Fourth-color: #dcdcdc;
 	--Fifth-color: #81bcba;
+	--Eighth-color: #f8f9fab4;
 }
 
 .page__container {
@@ -15,6 +16,10 @@
 	margin: auto;
 	margin-top: 2rem;
 	overflow: hidden;
+}
+
+.damsa {
+	background-color: #dcdcdc !important;
 }
 
 /* styling the profile sction */
@@ -46,7 +51,7 @@
 .name {
 	margin-left: 2.8rem;
 	margin-top: 0.5rem;
-	
+
 }
 
 /* end name and profile image */
@@ -58,10 +63,10 @@
 
 .information {
 	color: var(--Second-color);
-    text-shadow: 2px 2px 2px var(--Seventh-color);
-    font-size: 2rem;
-    font-family: 'Sansita Swashed',
-        cursive;
+	text-shadow: 2px 2px 2px var(--Seventh-color);
+	font-size: 2rem;
+	font-family: 'Sansita Swashed',
+		cursive;
 }
 
 .weather {
@@ -89,9 +94,9 @@
 	padding-left: 1rem;
 	padding-top: 2rem;
 	color: var(--Second-color);
-    text-shadow: 2px 2px 2px var(--Seventh-color);
-    font-size: 2rem;
-    font-family: 'Sansita Swashed',
+	text-shadow: 2px 2px 2px var(--Seventh-color);
+	font-size: 2rem;
+	font-family: 'Sansita Swashed',
 		cursive;
 }
 
@@ -120,6 +125,8 @@
 	max-height: 10rem;
 	padding-left: 1rem;
 }
+
+
 
 /* Galaxy Fold */
 @media screen and (min-height: 653px) and (max-width: 280px) {
@@ -194,35 +201,42 @@
 	height: 100px;
 	width: 100px;
 }
+
 .user__avatar_img {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
+
 .user__name_cont {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
+
 .booked__bottom {
 	width: 30rem;
 	height: 10rem;
 	display: flex;
 }
+
 .l__section {
 	height: 100%;
 	width: 7rem;
 }
+
 .image__bot__sec {
 	border-radius: 35%;
 	width: 7rem;
 	height: 7rem;
 }
+
 .image__bot__sec img {
 	border-radius: 35%;
 	width: 7rem;
 	height: 7rem;
 }
+
 .chalet__name_ {
 	width: 100%;
 	height: 3rem;
@@ -231,17 +245,20 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .r__section {
 	height: 100%;
 	width: 23rem;
 	/* background-color: yellow; */
 }
+
 .t__rsection {
 	/* background-color: blue; */
 	width: 100%;
 	height: 7rem;
 	padding-left: 1rem;
 }
+
 .b__rsection {
 	width: 100%;
 	height: 3rem;
@@ -249,6 +266,7 @@
 	display: flex;
 	justify-content: flex-end;
 }
+
 /* small devicess */
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
@@ -310,6 +328,7 @@
 	.descrebtion {
 		padding-left: 0.75rem;
 	}
+
 	.booked__bottom {
 		width: 100% !important;
 	}
@@ -359,10 +378,12 @@
 	.descrebtion {
 		font-size: 15px;
 	}
+
 	.chalite__img {
 		width: 6rem;
 		height: 6rem;
 	}
+
 	.chalite__img img {
 		width: 6rem;
 		height: 6rem;

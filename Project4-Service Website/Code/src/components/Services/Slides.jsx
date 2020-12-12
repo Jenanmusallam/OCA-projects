@@ -18,14 +18,14 @@ function Slides() {
 				<div className="carousel-inner">
 					<div className="carousel-item active" data-interval="10000">
 						<img
-							src={slidImg1}
+							src={slidImg2}
 							className="d-block sliderImg"
 							alt="Image slider"
 						/>
 					</div>
 					<div className="carousel-item" data-interval="2000">
 						<img
-							src={slidImg2}
+							src={slidImg5}
 							className="d-block sliderImg"
 							alt="Image slider"
 						/>
@@ -46,7 +46,7 @@ function Slides() {
 					</div>
 					<div className="carousel-item">
 						<img
-							src={slidImg5}
+							src={slidImg1}
 							className="d-block sliderImg"
 							alt="Image slider"
 						/>
