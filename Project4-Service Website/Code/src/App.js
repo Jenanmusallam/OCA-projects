@@ -36,7 +36,7 @@ localStorage.setItem(
 );
 function App() {
 	return (
-		<Router basename="/">
+		<HashRouter basename="/">
 			<div className="big__container">
 				<Mynav />
 				<Switch>
@@ -48,7 +48,7 @@ function App() {
 				</Switch>
 				<Footer />
 			</div>
-		</Router>
+		</HashRouter>
 	);
 }
 
