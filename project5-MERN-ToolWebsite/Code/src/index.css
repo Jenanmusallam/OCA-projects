@@ -7,7 +7,7 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #d9e5db;
+  background-color: #343a40 ;
 }
 
 * {
@@ -17,11 +17,13 @@ body {
     sans-serif !important; */
   font-family: Helvetica, Arial, sans-serif;
 }
+
 a {
-  color: #02594d;
+  color: #EE777A;
 }
+
 /* .MuiFormLabel-root.Mui-focused {
-  color: #02594d !important;
+  color: #EE777A !important;
 } */
 ::-webkit-scrollbar {
   width: 15px;
@@ -29,19 +31,21 @@ a {
 
 ::-webkit-scrollbar-track {
   background: #d8d2c6;
-  box-shadow: 8px #02594d;
+  box-shadow: 8px #EE777A;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background: #02594dda;
+  background: #EE777Ada;
 }
+
 .MuiFormLabel-root.Mui-focused {
-  color: #02594d !important;
+  color: #EE777A !important;
 }
+
 .MuiFilledInput-underline:after {
-  border-color: #02594d !important;
+  border-color: #EE777A !important;
 }
 
 /* .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
@@ -59,18 +63,21 @@ a {
 } */
 
 .MuiFormLabel-root.Mui-focused {
-  color: #02594d !important;
+  color: #EE777A !important;
 }
+
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #02594d !important;
+  border-color: #EE777A !important;
 }
 
 .MuiCheckbox-colorPrimary.Mui-checked {
-  color: #02594d !important;
+  color: #EE777A !important;
 }
+
 .Breadcrumbs {
   margin: 1rem;
 }
+
 .ourGreen {
-  background-color: #02594d !important;
+  background-color: #EE777A !important;
 }

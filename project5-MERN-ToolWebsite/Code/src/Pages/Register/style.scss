@@ -1,17 +1,22 @@
 body {
-  background-color: #d9e5db;
+  background-color: #ffffff;
 }
+
 .register {
+
   *:active,
   *:focus {
-    border-color: #02594d !important;
+    border-color: #EE777A !important;
   }
-  background-color: #d9e5db;
+
+  background-color: #343a40 ;
+
   .btn {
     &:hover {
       // opacity: 0.9;
     }
   }
+
   .social-container a {
     cursor: pointer;
     border: 1px solid #dddddd;
@@ -23,6 +28,7 @@ body {
     height: 40px;
     width: 40px;
   }
+
   .pargraph {
     font-size: 14px;
     font-weight: 100;
@@ -43,13 +49,14 @@ body {
 
     border: 1px solid #fffded;
     background-color: #fffded;
-    color: #02594d;
+    color: #EE777A;
     font-size: 14px;
     font-weight: bold;
     padding: 10px 30px;
     letter-spacing: 1px;
     text-transform: uppercase;
     outline: none;
+
     &:hover {
       background-color: #fffded;
     }
@@ -59,7 +66,7 @@ body {
     border-radius: 40px;
     margin-top: 1rem;
     border: 1px solid #fffded;
-    background-color: #02594d;
+    background-color: #EE777A;
     color: #fffded;
     font-size: 14px;
     font-weight: bold;
@@ -68,8 +75,9 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     outline: none;
+
     &:hover {
-      background-color: #02594d;
+      background-color: #EE777A;
     }
   }
 
@@ -131,6 +139,7 @@ body {
   }
 
   @keyframes show {
+
     0%,
     49.99% {
       opacity: 0;
@@ -160,7 +169,7 @@ body {
   }
 
   .overlay {
-    background: #02594d;
+    background: #EE777A;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -223,12 +232,15 @@ body {
       display: block;
       margin-top: 1rem;
     }
+
     .chef {
       display: none;
     }
+
     .container.right-panel-active .overlay-container {
       display: none;
     }
+
     .sign-up-container,
     .sign-in-container,
     .container.right-panel-active .sign-up-container {

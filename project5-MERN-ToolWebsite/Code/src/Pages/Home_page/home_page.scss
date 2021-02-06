@@ -1,6 +1,6 @@
 $First-color: #fffded;
-$Second-color: #02594d;
-$Third-color: #d9e5db;
+$Second-color: #c49b63;
+$Third-color: #343a40 ;
 $Fourth-color: #ffde9f;
 $Fifth-color: #d5d3c1;
 
@@ -13,7 +13,8 @@ $Fifth-color: #d5d3c1;
   .galaryImg {
     filter: brightness(60%);
   }
-  background-color: #d9e5db;
+
+  background-color: #343a40 ;
 
   * {
     margin: 0;
@@ -46,7 +47,9 @@ $Fifth-color: #d5d3c1;
     font-weight: bold;
     background-color: #08070770;
   }
+
   position: relative;
+
   .nameOfWeb {
     position: absolute;
     top: 50%;
@@ -56,6 +59,7 @@ $Fifth-color: #d5d3c1;
     color: white;
     font-weight: bold;
   }
+
   #test {
     position: absolute;
     height: 2rem;
@@ -64,6 +68,7 @@ $Fifth-color: #d5d3c1;
 
     z-index: 1003;
   }
+
   .scroll-down {
     // margin-top: -150px;
     height: 50px;
@@ -76,6 +81,7 @@ $Fifth-color: #d5d3c1;
     border-radius: 50px;
     cursor: pointer;
   }
+
   .scroll-down::before,
   .scroll-down::after {
     content: "";
@@ -90,20 +96,25 @@ $Fifth-color: #d5d3c1;
     border-left: transparent;
     animation: scroll-down 1s ease-in-out infinite;
   }
+
   .scroll-down::after {
     top: 30%;
     animation-delay: 0.3s;
   }
+
   @keyframes scroll-down {
     0% {
       opacity: 0;
     }
+
     30% {
       opacity: 1;
     }
+
     60% {
       opacity: 1;
     }
+
     100% {
       opacity: 0;
       top: 90%;
@@ -117,7 +128,7 @@ $Fifth-color: #d5d3c1;
 .container-gallery {
   text-align: center;
   padding: 4rem 0 0 0;
-  background-color: #d9e5db;
+  background-color: #343a40 ;
 
   * {
     margin: 0;
@@ -195,7 +206,7 @@ $Fifth-color: #d5d3c1;
   }
 
   .gallery_box .box_data:hover {
-    color: #d9e5db;
+    color: #343a40 ;
     font-size: 3em;
     font-weight: bold;
   }
@@ -216,7 +227,7 @@ $Fifth-color: #d5d3c1;
     font-size: 2.5em;
     text-align: center;
     font-weight: bold;
-    color: #02594d;
+    color: #c49b63;
     margin-bottom: 5rem;
     color: $Second-color;
   }
@@ -234,9 +245,22 @@ $Fifth-color: #d5d3c1;
       border-radius: 0rem 10rem;
       text-align: center;
 
+      &:hover {
+        transform: rotate(4deg);
+
+        .personal-img img {
+          transform: rotate(-4deg);
+        }
+
+        .name {
+          transform: rotate(-4deg);
+        }
+      }
+
       .personal-img {
         display: flex;
         justify-content: center;
+
 
         img {
           margin: auto !important;
@@ -274,7 +298,7 @@ $Fifth-color: #d5d3c1;
     }
 
     .gallery_box .box_data {
-      color: #d9e5db;
+      color: #343a40 ;
       font-size: 3em;
       font-weight: bold;
     }
@@ -328,7 +352,7 @@ $Fifth-color: #d5d3c1;
     }
 
     .gallery_box .box_data {
-      color: #d9e5db;
+      color: #343a40 ;
     }
   }
 
@@ -378,16 +402,20 @@ $Fifth-color: #d5d3c1;
   .container-slider .nameOfWeb {
     font-size: 3rem;
   }
+
   .container-slider {
     img {
       height: 35vh;
     }
   }
+
   .scroll-down {
     display: none;
   }
+
   .container-gallery {
     .gallery_box {
+
       li:nth-child(even),
       li:nth-child(odd) {
         height: 39vh !important;
