@@ -65,7 +65,7 @@
                                                         <div class='image-box'>
                                                             <div class='sale-tag'>sale!</div>
                                                             <figure class='image'><a href='shop-singleTest.php?product={$row['pro_id']}'>
-                                                            <img src='images/catogary/{$row['pro_img']}' alt=''></a></figure>
+                                                            <img src='images/catogary/{$row['pro_img']}' alt='' style='height: 17rem'></a></figure>
                                                             <div class='btn-box'><a href='shopping-cart.php'>Add to cart</a></div>
                                                         </div>
                                                         <div class='lower-content'>
@@ -103,7 +103,7 @@
                                                         <div class='image-box'>
                                                             <div class='sale-tag'>sale!</div>
                                                             <figure class='image'><a href='shop-singleTest.php?product={$row['pro_id']}'>
-                                                            <img src='images/catogary/{$row['pro_img']}' alt=''></a></figure>
+                                                            <img src='images/catogary/{$row['pro_img']}' alt=''  style='height: 17rem'></a></figure>
                                                             <div class='btn-box'><a href='shopping-cart.php'>Add to cart</a></div>
                                                         </div>
                                                         <div class='lower-content'>
@@ -120,7 +120,7 @@
                                 echo "<div class='shop-item col-lg-4 col-md-6 col-sm-12'>
                                                     <div class='inner-box'>
                                                         <div class='image-box'>
-                                                            <figure class='image'><a href='shop-singleTest.php?product={$row2['pro_id']}'><img src='images/catogary/{$row2['pro_img']}' alt=''></a></figure>
+                                                            <figure class='image'><a href='shop-singleTest.php?product={$row2['pro_id']}'><img src='images/catogary/{$row2['pro_img']}' alt=''  style='height: 17rem'></a></figure>
                                                             <div class='btn-box'><a href='shopping-cart.php'>Add to cart</a></div>
                                                         </div>
                                                         <div class='lower-content'>

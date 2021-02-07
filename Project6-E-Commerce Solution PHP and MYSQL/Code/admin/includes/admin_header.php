@@ -80,23 +80,23 @@ if (!$_SESSION['admin_id']) {
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li>
-                            <a href="Manage_Stors.php">
+                            <a href="Manage_Stors.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage Stores</a>
                         </li>
                         <li>
-                            <a href="manage_admin.php">
+                            <a href="manage_admin.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage Admin</a>
                         </li>
                         <li>
-                            <a href="Manage_Category.php">
+                            <a href="Manage_Category.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage Category</a>
                         </li>
                         <li>
-                            <a href="Manage_products.php">
+                            <a href="Manage_products.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage products</a>
                         </li>
                         <li>
-                            <a href="manage_users.php">
+                            <a href="manage_users.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage users</a>
                         </li>
 
@@ -110,7 +110,7 @@ if (!$_SESSION['admin_id']) {
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="manage_admin.php">
-                    <img src="images/sd.png" alt="Cool Admin"  style="width: 7vw;"/>
+                    <img src="images/sd.png" alt="Cool Admin" style="width: 7vw;" />
                     <!-- <p>logo</p> -->
 
                 </a>
@@ -119,23 +119,23 @@ if (!$_SESSION['admin_id']) {
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li>
-                            <a href="Manage_Stors.php">
+                            <a href="Manage_Stors.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage Stores</a>
                         </li>
                         <li>
-                            <a href="manage_admin.php">
+                            <a href="manage_admin.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage Admin</a>
                         </li>
                         <li>
-                            <a href="Manage_Category.php">
+                            <a href="Manage_Category.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage Category</a>
                         </li>
                         <li>
-                            <a href="Manage_products.php">
+                            <a href="Manage_products.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage products</a>
                         </li>
                         <li>
-                            <a href="manage_users.php">
+                            <a href="manage_users.php" style="color: #5fcac7;">
                                 <i class="fas fa-chart-bar"></i>Manage users</a>
                         </li>
 
@@ -159,12 +159,12 @@ if (!$_SESSION['admin_id']) {
                                     <div class="account-item clearfix js-item-menu">
 
                                         <div class="content rem10">
-                                            <a class="js-acc-btn" href="#"><?php echo $_SESSION['admin_name']; ?></a>
+                                            <a class="js-acc-btn" href="#" style="color: #5fcac7;"><?php echo $_SESSION['admin_name']; ?></a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
 
                                             <div class="account-dropdown__footer">
-                                                <a href="logout.php">
+                                                <a href="logout.php" style="color: #5fcac7;">
                                                     <i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>

@@ -10110,7 +10110,7 @@ iframe#gmap_canvas {
 .shop-item .image img{
 	display: block;
 	width: 100%;
-	height: auto;
+	height: 17rem !important;
 }
 
 .shop-item .image-box .btn-box{

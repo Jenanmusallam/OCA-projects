@@ -86,13 +86,9 @@ if (isset($_GET['delid'])) {
                             <th class="product-price">Total</th>
                             <th class="product-price">Delete</th>
                             <th class="product-price">Update</th>
-
-
-
-
                         </tr>
                     </thead>
-                    <tb6ody>
+                    <tbody>
                         <?php
                         $sql  = "SELECT * FROM order_details ";
                         $products = mysqli_query($conn, $sql);
@@ -142,7 +138,7 @@ if (isset($_GET['delid'])) {
                         }
 
                         ?>
-                    </tb6ody>
+                    </tbody>
                 </table>
             </div>
 
@@ -160,9 +156,12 @@ if (isset($_GET['delid'])) {
 
                                 <a href="signin.php"> Proceed to Checkout</a></button></li>';
                         } else {
-                            echo '<li class="text-right"><button type="submit" class="theme-btn proceed-btn">
+                            echo '<li class="text-right">
+                                  <button type="submit" class="theme-btn proceed-btn">
+                                  <a href="profile_page.php">Proceed to Checkout</a> </button></li>
+                                
+                                ';
 
-                                <a href="profile_page.php">Proceed to Checkout</a> </button></li>';
                         } ?>
                     </ul>
                 </div>

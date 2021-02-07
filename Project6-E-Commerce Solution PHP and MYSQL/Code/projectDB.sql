@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 06, 2021 at 11:00 PM
+-- Generation Time: Feb 07, 2021 at 03:15 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -63,7 +63,7 @@ CREATE TABLE `category` (
 INSERT INTO `category` (`cat_id`, `cat_name`, `cat_desc`, `cat_img`) VALUES
 (1, 'Ice Creem', 'Ice Creem desc', 'ice-cream1.jpg'),
 (2, 'Cake', 'Cake desc', 'Cake.jpg'),
-(3, 'Arabic Sweets', 'arabic sweets', 'Arabic-sweets2.jpg');
+(6, 'Arabic Sweets', 'arabic sweets', 'Arabic-sweets2.jpg');
 
 -- --------------------------------------------------------
 
@@ -84,7 +84,8 @@ CREATE TABLE `hot_pro` (
 INSERT INTO `hot_pro` (`hot_pro_id`, `h_pro_id`, `h_store_id`) VALUES
 (1, 2, 1),
 (2, 3, 3),
-(3, 5, 1);
+(3, 5, 1),
+(0, 26, 6);
 
 -- --------------------------------------------------------
 
@@ -114,6 +115,16 @@ CREATE TABLE `order_details` (
   `pro_id` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `order_details`
+--
+
+INSERT INTO `order_details` (`o_d_id`, `pro_qty`, `total`, `pro_id`) VALUES
+(38, 1, '11', 3),
+(46, 1, '8', 2),
+(49, 1, '7', 14),
+(50, 1, '3', 6);
+
 -- --------------------------------------------------------
 
 --
@@ -137,15 +148,38 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`pro_id`, `pro_name`, `pro_desc`, `pro_price`, `offer`, `is_off`, `pro_img`, `store_id`, `cat_id`) VALUES
-(1, 'Knafeh', 'knafeh', '8', '7', 'true', 'Arabic-sweets1.jpg', 1, 2),
-(2, 'Mex Ice Creem', 'TripAdvisorBASKIN-ROBBINS', '11', '9', 'true', 'BR6.jpg', 2, 1),
-(3, 'Man W aslwa', '', '8', '0', 'false', 'Nafeeseh_prodect6.jpg', 1, 3),
-(4, 'Tamriah', '', '3', '2', 'true', 'ArafatSweets_Product5.jpg', 9, 3),
-(5, 'sweet', 'sweet', '2', '1', 'true', 'Nafeeseh_prodect3.jpg', 1, 3),
-(6, 'sweet', 'sweet', '11', '10', 'true', 'Nafeeseh_prodect2.jpg', 1, 3),
-(7, 'Knafeh', ' Knafeh sweet', '15', '14', 'true', 'AlNejmahsweets_product1.jpg', 8, 3),
-(8, 'Knafeh', 'Knafeh Sweets', '16', '0', 'false', 'Nafeeseh_prodect1.jpg', 1, 3),
-(9, 'Knafeh', 'Knafeh Sweets', '13', '12', 'true', 'ArafatSweets_Product1.jpg', 10, 2);
+(2, 'Knafeh', 'knafeh', '8', '7', 'true', 'Arabic-sweets1.jpg', 1, 2),
+(3, 'Mex Ice Creem', 'TripAdvisorBASKIN-ROBBINS', '11', '9', 'true', 'BR6.jpg', 3, 1),
+(5, 'Man W aslwa', '', '8', '0', 'false', 'Nafeeseh_prodect6.jpg', 1, 6),
+(6, 'Tamriah', '', '3', '2', 'true', 'ArafatSweets_Product5.jpg', 11, 6),
+(8, 'Sweet arafat', 'test', '2', '1', 'true', 'Nafeeseh_prodect3.jpg', 1, 6),
+(9, 'Basbosa Sweet', 'test', '11', '10', 'true', 'Nafeeseh_prodect2.jpg', 1, 6),
+(10, 'Knafeh', ' Knafeh sweet', '15', '14', 'true', 'AlNejmahsweets_product1.jpg', 10, 6),
+(11, 'Knafeh', 'Knafeh Sweets', '16', '0', 'false', 'Nafeeseh_prodect1.jpg', 1, 6),
+(12, 'Knafeh', 'Knafeh Sweets', '13', '12', 'true', 'ArafatSweets_Product1.jpg', 11, NULL),
+(13, 'Chocolate Pralines ', '', '7', '6', 'true', 'BR3.png', 3, NULL),
+(14, 'Caramel Macchiato', '', '7', '0', 'false', 'BR4.png', 3, NULL),
+(15, 'Mom’s Makin’ Cookiem', '', '5', '0', 'false', 'BR1.png', 3, NULL),
+(16, 'ST’ Cookies', '', '6', '0', 'false', 'BR2.png', 3, NULL),
+(18, 'Cake Sweet', '', '12', '10', 'true', 'rawanBlack.jpg', 9, NULL),
+(19, 'Cake Sweet chkoo', '', '20', '19', 'true', 'rawanKitkat.jpg', 9, NULL),
+(21, 'Sweet strobary', '', '20', '0', 'false', 'rawanApple.jpg', 9, NULL),
+(22, 'Cake Sweet Doctor', '', '50', '0', 'false', 'cakeShopDoctor.jpg', 8, NULL),
+(23, 'Camera', '', '50', '0', 'false', 'cakeShopCamera.jpg', 8, NULL),
+(24, 'Ice cho', '', '5', '4', 'true', 'Gerard1.jpg', 5, NULL),
+(25, 'Ice Creem', '', '10', '0', 'false', 'Gusti1.jpg', 6, NULL),
+(26, 'Ice Creem swsw', '', '11', '0', 'false', 'Gusti2.jpg', 6, NULL),
+(27, 'Cake Orange', '', '40', '0', 'false', 'cakeryOrange.jpg', 7, NULL),
+(28, 'Cake Berry ', '', '15', '0', 'false', 'cakeryBerry.jpg', 7, NULL),
+(29, 'Waffel ', '', '4', '4', 'true', 'AlNejmahsweets_product4.jpg', 10, NULL),
+(30, ' Ice Creem sweet', '', '20', '0', 'false', 'Gerard8.jpg', 5, NULL),
+(31, 'waffel', '', '4', '0', 'false', 'AlNejmahsweets_product4.jpg', 10, NULL),
+(32, 'em3ale', '', '15', '0', 'false', 'AlNejmahsweets_product2.jpg', 10, NULL),
+(33, '7alawet aljeben', '', '6', '0', 'false', 'ArafatSweets_Product4.jpg', 11, NULL),
+(34, 'ma3mol', '', '6', '0', 'false', 'HabibahSweets_product3.jpg', 12, NULL),
+(35, 'Sweet Habibah', '', '16', '0', 'false', 'HabibahSweets_product5.jpg', 12, NULL),
+(36, 'Sweet Habibah', '', '15', '0', 'false', 'HabibahSweets_product2.jpg', 12, NULL),
+(37, 'Chees Cake', '', '6', '0', 'false', 'AlNejmahsweets_product3.jpg', 10, NULL);
 
 -- --------------------------------------------------------
 
@@ -178,16 +212,16 @@ CREATE TABLE `store` (
 --
 
 INSERT INTO `store` (`store_id`, `store_name`, `store_bio`, `store_img`, `cat_id`) VALUES
-(1, 'Nafeeseh', 'Nafeeseh sweet', 'NafeesehLogo.jpg', 3),
-(2, 'Baskin Robeins', 'Baskin Robbins Ice Creem', 'baskin-robbins_logo.png', 1),
-(3, 'Gerard', 'Gerard Ice Creem', 'Gerard_Logo.jpg', 1),
-(4, 'Gusti ', 'Gusti Ice Creem', 'Gusti_logo.jpg', 1),
-(5, ' The Cakery', 'cakery Cake', 'cakery-logo.png', 2),
-(6, 'The Cake Shop', 'The Cake Shop Cake', 'cakeShop-logo.png', 2),
-(7, 'Rawan Cake', 'Rawan Cake', 'rawan-logo.png', 2),
-(8, 'Al Nejmah sweets', 'Al Nejmah sweets', 'AlNejmahsweets_logo.png', 3),
-(9, 'Arafat Sweets', 'Arafat Sweets', 'ArafatSweets_logo.jpg', 3),
-(10, 'Habibah Sweets', 'Habibah Sweets', 'HabibahSweets_logo.jpg', 3);
+(1, 'Nafeeseh', 'Nafeeseh sweet', 'NafeesehLogo.jpg', 6),
+(3, 'Baskin Robeins', 'Baskin Robbins Ice Creem', 'baskin-robbins_logo.png', 1),
+(5, 'Gerard', 'Gerard Ice Creem', 'Gerard_Logo.jpg', 1),
+(6, 'Gusti ', 'Gusti Ice Creem', 'Gusti_logo.jpg', 1),
+(7, ' The Cakery', 'cakery Cake', 'cakery-logo.png', 2),
+(8, 'The Cake Shop', 'The Cake Shop Cake', 'cakeShop-logo.png', 2),
+(9, 'Rawan Cake', 'Rawan Cake', 'rawan-logo.png', 2),
+(10, 'Al Nejmah sweets', 'Al Nejmah sweets', 'AlNejmahsweets_logo.png', 6),
+(11, 'Arafat Sweets', 'Arafat Sweets', 'ArafatSweets_logo.jpg', 6),
+(12, 'Habibah Sweets', 'Habibah Sweets', 'HabibahSweets_logo.jpg', 6);
 
 -- --------------------------------------------------------
 
@@ -203,6 +237,22 @@ CREATE TABLE `users` (
   `status` int(1) DEFAULT NULL COMMENT '1-active, 0-deactive',
   `created_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `email`, `password`, `fullname`, `status`, `created_at`) VALUES
+(8, 'test1@ho.com', '8cb2237d0679ca88db6464eac60da96345513964', 'test2', 1, '2021-02-04 19:41:25'),
+(9, 'Accessories@ho.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'Accessories', 1, '2021-02-04 19:43:13'),
+(10, 'Jenan1@hot.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'Jenan1', 1, '2021-02-04 19:58:56'),
+(11, 'jenan111@hotmail.com', '8cb2237d0679ca88db6464eac60da96345513964', 'jenan', 1, '2021-02-04 20:01:24'),
+(12, 'a@ho.com', '7d0db336da36537dafbaec45fd68ca7037efac5a', 'Accessories', 1, '2021-02-04 20:04:30'),
+(15, 'jenan10@hotmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'jenan', 1, '2021-02-06 18:45:50'),
+(16, 'jenan@h1.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'Accessories', 1, '2021-02-06 18:50:47'),
+(17, 'test@h.com', '', 'test2t4', 1, '2021-02-06 19:48:54'),
+(18, 'q@t.com', '', 'test', 1, '2021-02-07 04:57:16'),
+(19, 'jenan@hotmail.com', '', 'جنان', 1, '2021-02-07 06:39:06');
 
 --
 -- Indexes for dumped tables
@@ -286,7 +336,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -298,13 +348,13 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `o_d_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `o_d_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `pro_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `pro_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `pro_img`
@@ -316,13 +366,13 @@ ALTER TABLE `pro_img`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `store_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `store_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Constraints for dumped tables

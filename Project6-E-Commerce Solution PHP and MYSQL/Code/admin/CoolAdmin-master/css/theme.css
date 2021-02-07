@@ -114,7 +114,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #333333;
+    color: #5fcac7;
     font-weight: 700;
     margin: 0;
     line-height: 1.2;
@@ -177,7 +177,7 @@ strong {
     text-transform: capitalize;
     font-weight: 400;
     font-size: 24px;
-    color: #333;
+    color: #5fcac7;
 }
 
 .title-3 i {
@@ -207,7 +207,7 @@ strong {
 .heading-title {
     font-size: 24px;
     font-weight: 500;
-    color: #333;
+    color: #5fcac7;
     text-transform: capitalize;
     margin-bottom: 10px;
 }
@@ -434,7 +434,7 @@ section {
 }
 
 .fa-hover a:hover {
-    color: #333;
+    color: #5fcac7;
 }
 
 .main-content--pb30 {
@@ -1426,7 +1426,7 @@ section {
 }
 
 .account-item > .content > a {
-    color: #333;
+    color: #5fcac7;
     text-transform: capitalize;
     font-weight: 500;
 }
@@ -1499,7 +1499,7 @@ section {
 }
 
 .account-dropdown .info .content .name a {
-    color: #333;
+    color: #5fcac7;
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -1532,7 +1532,7 @@ section {
 
 .account-dropdown__item a {
     display: block;
-    color: #333;
+    color: #5fcac7;
     padding: 15px 25px;
     font-size: 14px;
 }
@@ -1559,7 +1559,7 @@ section {
 
 .account-dropdown__footer a {
     display: block;
-    color: #333;
+    color: #5fcac7;
     padding: 15px 25px;
     font-size: 14px;
 }
@@ -1843,7 +1843,7 @@ section {
 }
 
 .sub-header-mobile-2 .header__tool .account-wrap .account-item--style2 .content a {
-    color: #333;
+    color: #5fcac7;
 }
 
 .sub-header-mobile-2 .header__tool .notifi-dropdown {
@@ -3031,7 +3031,7 @@ section {
 }
 
 .header4-wrap .header__tool .account-item--style2 .content a {
-    color: #333;
+    color: #5fcac7;
 }
 
 .header4-wrap .header__tool .account-item--style2 .content a:hover {
@@ -3429,7 +3429,7 @@ section {
 }
 
 .au-task__item-inner .task a:hover {
-    color: #333;
+    color: #5fcac7;
 }
 
 .au-task__item-inner .time {
@@ -3647,11 +3647,11 @@ section {
 }
 
 .au-message__item.unread .au-message__item-text .text .name {
-    color: #333;
+    color: #5fcac7;
 }
 
 .au-message__item.unread .au-message__item-text .text p {
-    color: #333;
+    color: #5fcac7;
 }
 
 .au-chat--border .au-chat__title {
@@ -3700,7 +3700,7 @@ section {
 .au-chat-info .nick a {
     font-weight: 600;
     font-size: 16px;
-    color: #333;
+    color: #5fcac7;
 }
 
 .au-chat-info .nick a:hover {
@@ -4095,7 +4095,7 @@ section {
 
 .chart-statis .index {
     font-size: 18px;
-    color: #333;
+    color: #5fcac7;
 }
 
 .recent-report__chart canvas {
@@ -4237,7 +4237,7 @@ section {
 }
 
 .table-earning thead th {
-    background: #333;
+    background: #5fcac7;
     font-size: 16px;
     color: #fff;
     vertical-align: middle;
@@ -4670,7 +4670,7 @@ section {
 }
 
 .table-data3 thead {
-    background: #333;
+    background: #5fcac7;
 }
 
 .table-data3 thead tr th {
@@ -4852,7 +4852,7 @@ section {
 }
 
 .au-breadcrumb__list .active a:hover {
-    color: #333;
+    color: #5fcac7;
 }
 
 .au-breadcrumb2 {

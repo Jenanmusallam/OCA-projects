@@ -55,7 +55,7 @@ include 'include/header.php';
 
                                         <div class='image-column col-md-6 col-sm-12'>
                                             <figure class='image'>
-                                                <?php echo  "<img src='images/catogary/{$pro['pro_img']}' alt=''>"; ?>
+                                                <?php echo  "<img src='images/catogary/{$pro['pro_img']}' alt=''  style='height: 17rem'>"; ?>
 
                                             </figure>
                                         </div>
@@ -103,25 +103,6 @@ include 'include/header.php';
 
                                                 </form>
                                             <?php
-
-                                            // if (isset($_GET['quantity'])) {
-                                            //     // fetch data from form                                                echo "<h1>weweeee</h1>";
-                                            //     $pro_qty = $_GET['quantity'];
-                                            //     if ($pro['is_off'] == "true") {
-                                            //         $myPrice = $pro['offer'];
-                                            //     } else {
-                                            //         $myPrice = $pro['pro_price'];
-                                            //     }
-                                            //     $totalQty = $pro_qty * $myPrice;
-                                            //     $proSql = "INSERT INTO order_details(pro_qty,total,pro_id)
-                                            //     values('{$pro_qty}','{$totalQty}','{$_GET['product']}') ";
-                                            //     $test4 = mysqli_query($conn, $proSql);
-                                            //     if (isset($test4)) {
-                                            //         header("location:shopping-cart.php");
-                                            //     }
-
-                                            // header("location:shopping-cart.php");
-                                            // };
                                         }; ?>
                                             </div>
                                         </div>
