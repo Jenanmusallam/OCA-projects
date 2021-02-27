@@ -1,12 +1,12 @@
 
 PowerPoint:
-https://docs.google.com/presentation/d/1jDWnJ-2qzNG85MY4p6O53j5hpPl4I5AQiJFMMklk1gk/edit?usp=sharing
+https://1drv.ms/p/s!AmX1w_7tEOThj3vLsy4FH1fI8BG6?e=9JiYPo
 
 GitHup:
-
+https://github.com/Jenanmusallam/OCA-projects/tree/master/Project7-Greenfield%20Project%20Laravel
 
 Trello:
-https://trello.com/b/JPo4zDR6/project6
+https://trello.com/b/PNlLxc48/project7
 
 Wireframe:
 https://miro.com/app/board/o9J_lSOZfpo=/ 
