@@ -6,10 +6,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # pages
     path('', views.index),
-    # path('login/', views.login),
     path('form_upload/', views.import_data),
-    path('invoice/', views.invoice),
-    path('projects/', views.projects),
     path('tables/', views.tables),
     #End pages
+    path('search/', views.search),
 ]
