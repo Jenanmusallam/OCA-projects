@@ -32,12 +32,12 @@
 
    .navLi {
        display: inline-block;
-       border: 3px solid#FF96CA;
-       background-color: white;
+       border: 3px solid#33051cb2;
+       background-color: rgba(104, 55, 93, 0.568);
        border-radius: 20%;
        padding: 1rem;
        width: 13rem;
-       color: #FF96CA;
+       color: #ff96ca9f;
        text-align: center;
        font-size: 1.3rem;
        margin: 0.3rem;
